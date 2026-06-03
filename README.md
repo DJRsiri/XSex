@@ -1,5 +1,7 @@
 # XSex — Minecraft Spigot 插件项目详解
 
+- 二改+汉化 by **ChickenDJRsiri**
+
 ## 项目概览
 
 | 属性 | 值 |
