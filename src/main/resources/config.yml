@@ -1,0 +1,76 @@
+messages:
+  start: §d§lSOX §f> §7S❤O❤X❤开❤始❤~❤
+  start-title-header: §a正❤在❤S❤O❤X
+  start-title-footer: ''
+  end-male-1: §d§lSOX §f> §7你从你的对象那里得了什么不得了的病💀.
+  end-female-1: §d§lSOX §f> §7你从你的对象那里得了什么不得了的病💀.
+  end-male-2: §d§lSOX §f> §7做完了.贤者时间💀.
+  end-female-2: §d§lSOX §f> §7做完了.但貌似你没有贤者时间💀.
+  end-male-3: §d§lSOX §f> §7你 他 妈 的 犯 罪 了! 2-8年徒刑!!
+  end-female-3: §d§lSOX §f> §7真是行啊,你让你的对象犯罪了.
+  end-broadcast-3: §d§lSOX §f> §7%player1 因强奸罪判处 %player 2-8年徒刑.
+  end-command-3: tempban %player 8s 强奸
+  end-male-4: §d§lSOX §f> §7你让她用嘴帮你稍稍处理一下哦❤.
+  end-female-4: §d§lSOX §f> §7呜❤...呜呜呜❤...
+  end-male-5: §d§lSOX §f> §7恭喜!你 当 爹 了!(也许记得带套比较好?)
+  end-female-5: §d§lSOX §f> §7恭喜!你 当 妈 了!(也许记得带套比较好?)
+  end-broadcast-5: §d§lSOX §f> §7У %player1 和 %player2 生子!
+  end-title-header: §a欸这就不行了吗...❤
+  end-title-footer: ''
+  sex-male-1: §7...嗯啊啊哼哼嗯
+  sex-male-2: §7哈...
+  sex-male-3: §7啊...
+  sex-male-4: §7啊...啊...
+  sex-male-5: §7...
+  sex-male-6: §7...
+  sex-male-7: §7你的SOX成瘾程度加深了...❤
+  sex-male-8: §7倒数 五 四 三...
+  sex-male-9: §7二 一...
+  sex-male-10: §7火箭升空!!!
+  sex-female-1: §7...嗯啊啊哼哼嗯❤
+  sex-female-2: §7万一再也回不来了❤,怎么办❤...
+  sex-female-3: §7呜...呜呜❤...
+  sex-female-4: §7啊...啊❤...
+  sex-female-5: §7咦惹❤...
+  sex-female-6: §7“...不行❤...哈❤...不要再用力了❤...
+  sex-female-7: §7你的SOX成瘾程度加深了...❤
+  sex-female-8: §7好热❤好热❤好热❤,不能思考❤...
+  sex-female-9: §7忍不住了...❤
+  sex-female-10: §7呜❤呜❤呜❤!!!
+  sex-cancel: §d§lCЕКС §f> §7阿拉,今天不行...
+  help:
+    - '§d§lSOX §f> §7S❤O❤X❤次❤数: %amount.'
+    - '§d§lSOX §f> §7性别是: %gender.'
+    - ''
+    - '§d§lSOX §f> §7发送共度良宵请求: /sex [玩家].'
+    - '§d§lSOX §f> §7性别设置: /sex gender [male/female].'
+    - '§d§lSOX §f> §7我接受了❤!: /sex accept [玩家].'
+    - '§d§lSOX §f> §7哎多,今天不行❤...: /sex deny [玩家].'
+  help-gender-1: '§d§lSOX §f> §7设置性别: /sex gender [male/female].'
+  help-gender-2: §d§lSOX §f> §7确认为男性!
+  help-gender-3: §d§lSOX §f> §7确认为女性!
+  help-accept: '§d§lSOX §f> §7接受请求: /sex accept [玩家].'
+  help-deny: '§d§lSOX §f> §7拒绝请求: /sex deny [玩家].'
+  requests:
+    request-1:
+      - §d§lSOX §f> §7%player 玩家向您发送了SOX请求.
+      - §d§lSOX §f> §7不要离开你的伴侣!
+      - §d§lSOX §f> §7/sex accept %player - 我接受SOX请求!❤
+      - §d§lSOX §f> §7/sex deny %player - 哎多,今天不行.
+    request-2:
+      - §d§lSOX §f> §7您已向 %player 发送SOX请求.
+      - §d§lSOX §f> §7不要离开你的伴侣哦！
+    error-1: §d§lSOX §f> §7你离你的伴侣太远了.
+    error-2: §d§lSOX §f> §7不要同!
+    error-3: §d§lSOX §f> §7您没有指定性别.
+    error-4: §d§lSOX §f> §7您的伴侣没有指定性别.
+    error-5: §d§lSOX §f> §7指定的玩家不在线.
+    error-6: §d§lSOX §f> §7您已经向玩家发送了请求!
+    error-7: §d§lSOX §f> §7你已经做爱了!
+    error-8: §d§lSOX §f> §7你太累了！等待 %time 秒在下一个动作之前.
+    error-9: §d§lSOX §f> §7?你在?这个问题靠自己解决不了!
+    error-10: §d§lSOX §f> §7没有请求来自 %player.
+    error-11: §d§lSOX §f> §7请求发送者已退出游戏.
+    error-12: §d§lSOX §f> §7你来晚了,人家开始了.
+    error-13: §d§lSOX §f> §请求发送者太累了.
+    succesfull-1: §d§lSOX §f> §7拒绝了 %player.

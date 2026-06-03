@@ -1,0 +1,10 @@
+name: XSex
+version: '1.0-SNAPSHOT'
+main: org.ChickenDJR.xSex.Main
+api-version: '1.18'
+prefix: XSex
+authors: [ ChickenDJRsiri ]
+description: 重制版
+website: https://github.com/DJRsiri
+commands:
+  sex:
