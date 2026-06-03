@@ -1,7 +1,10 @@
 package org.ChickenDJR.xSex;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
@@ -11,9 +14,9 @@ public class SexManager {
     private Main pl;
     public HashMap<String, SexPlayer> players = new HashMap<>();
     public HashMap<Player, Sex> alreadySex = new HashMap<>();
-    public HashMap<String, String> requests = new HashMap<>();
-    public HashMap<String, Integer> cooldowns = new HashMap<>();
-    public HashMap<String, Integer> timeout = new HashMap<>();
+    public ConcurrentHashMap<String, String> requests = new ConcurrentHashMap<>();
+    public ConcurrentHashMap<String, Integer> cooldowns = new ConcurrentHashMap<>();
+    public ConcurrentHashMap<String, Integer> timeout = new ConcurrentHashMap<>();
 
 
     public SexManager(Main paramMain) {
@@ -61,13 +64,9 @@ public class SexManager {
 
 
     public void stop() {
-        Iterator<Player> localIterator = this.alreadySex.keySet().iterator();
-        while (localIterator.hasNext()) {
-
-            Player localPlayer = localIterator.next();
-            Sex localSex = this.alreadySex.get(localPlayer);
-            localSex.extraCancel();
-            localIterator.remove();
+        Set<Sex> sessions = new HashSet<>(this.alreadySex.values());
+        for (Sex session : sessions) {
+            session.extraCancel();
         }
     }
 

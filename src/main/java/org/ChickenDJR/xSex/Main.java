@@ -18,6 +18,7 @@ public class Main
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(new Listeners(this), (Plugin)this);
         this.manager = new SexManager(this);
+        getCommand("sex").setTabCompleter(new SexTabCompleter(this));
     }
 
     public void onDisable() {
@@ -55,20 +56,22 @@ public class Main
                     if (!str.equals("gender")) {
                         break;
                     }
-                    if (paramArrayOfString.length > 1)
-                    { if (paramArrayOfString[1].equalsIgnoreCase("male")) {
-                        getManager().getPlayer(localPlayer).setGender(1);
-                        paramCommandSender.sendMessage(getConfig().getString("messages.help-gender-2"));
-                        return true;
-                    }
+                    if (paramArrayOfString.length > 1) {
+                        if (paramArrayOfString[1].equalsIgnoreCase("male")) {
+                            getManager().getPlayer(localPlayer).setGender(1);
+                            paramCommandSender.sendMessage(getConfig().getString("messages.help-gender-2"));
+                            return true;
+                        }
                         if (paramArrayOfString[1].equalsIgnoreCase("female")) {
                             getManager().getPlayer(localPlayer).setGender(2);
                             paramCommandSender.sendMessage(getConfig().getString("messages.help-gender-3"));
                             return true;
                         }
-
                         paramCommandSender.sendMessage(getConfig().getString("messages.help-gender-1"));
-                        return true; }  break;
+                        return true;
+                    }
+                    paramCommandSender.sendMessage(getConfig().getString("messages.help-gender-1"));
+                    return true;
                 case 3079692: if (!str.equals("deny"))
                     break;  if (paramArrayOfString.length > 1) { this.manager.denyRequest(localPlayer, paramArrayOfString[1]); return true; }  paramCommandSender.sendMessage(getConfig().getString("messages.help-deny")); return true; }  }  if (paramArrayOfString.length ==
 

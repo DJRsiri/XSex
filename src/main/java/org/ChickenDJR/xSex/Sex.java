@@ -115,7 +115,7 @@ public class Sex
                 Bukkit.broadcastMessage(Main.getInstance().getConfig().getString("messages.end-broadcast-5").replace("%player1", this.female.getName()).replace("%player2", this.male.getName())); break;
         }
         this.male.sendTitle(Main.getInstance().getConfig().getString("messages.end-title-header"), Main.getInstance().getConfig().getString("messages.end-title-footer"));
-        this.female.sendTitle(Main.getInstance().getConfig().getString("messages.end-title-header"), Main.getInstance().getConfig().getString("messages.start-title-footer"));
+        this.female.sendTitle(Main.getInstance().getConfig().getString("messages.end-title-header"), Main.getInstance().getConfig().getString("messages.end-title-footer"));
         (Main.getInstance().getManager()).alreadySex.remove(this.male);
         (Main.getInstance().getManager()).alreadySex.remove(this.female);
         (Main.getInstance().getManager()).cooldowns.put(this.male.getName(), Integer.valueOf(60));
