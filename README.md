@@ -195,7 +195,7 @@ XSex/
 ./gradlew build
 
 # 产物位于
-# build/libs/XSex-1.0-SNAPSHOT.jar
+# build/libs/XSex-(build_version).jar
 ```
 
 将生成的 JAR 文件放入 Spigot/Paper 1.18.x 服务器的 `plugins/` 目录，重启或执行 `/reload` 即可加载。
