@@ -14,6 +14,7 @@ public class Main
     private SexManager manager;
 
     public void onEnable() {
+        getLogger().info("Snapshot Version! XSex快照版本：这可能导致插件崩溃不可用或服务器出现异常！");
         instance = this;
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(new Listeners(this), (Plugin)this);
