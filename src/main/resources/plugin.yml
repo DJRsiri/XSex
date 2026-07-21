@@ -4,7 +4,7 @@ main: org.ChickenDJR.xSex.Main
 api-version: '1.18'
 prefix: XSex
 authors: [ ChickenDJRsiri ]
-description: （二改汉化）在游戏中模拟两名玩家之间的成人互动行为
-website: https://github.com/DJRsiri
+description: 在游戏中模拟两名玩家之间的成人互动行为
+website: https://github.com/DJRsiri/XSex
 commands:
   sex:
